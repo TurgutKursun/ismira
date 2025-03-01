@@ -1,2 +1,66 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+    import Button from "$lib/components/Button.svelte";
+    import { DotLottieSvelte } from '@lottiefiles/dotlottie-svelte';    
+</script>
+
+<style>
+    h1 {
+        font-family: 'Playfair Display';
+        font-size: 24px;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 20px;
+    }
+    h2 {
+        font-size: 20px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .name {
+        font-family: 'Playfair Display';
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lottie {
+        margin: 0px;
+        padding: 0px;
+        margin-top: 30px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
+
+<div class="name">
+    <h1>
+        Ismira
+    </h1>
+    <h2>
+        Groepspraktijk
+    </h2>
+</div>
+
+<p>
+    Psychologisch begeleiding <br> in Zaventem
+</p>
+
+<p>
+    Iedereen heeft af en toe <br> een luisterend oor nodig
+</p>
+
+<div class="lottie">
+    <DotLottieSvelte
+    src="https://lottie.host/d681077d-5d27-45d6-8d34-8c242d6442ff/S3tEmV2oWK.lottie"
+    loop
+    autoplay
+  />
+</div>
+
+<div class="buttons">
+    <Button buttonText="Afspraak maken" --margin-bottom=20px/>
+    <Button buttonText="Wat doen we?" --margin-bottom=20px/>
+    <Button buttonText="Wie is wie?"/>
+</div>
