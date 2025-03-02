@@ -1,4 +1,6 @@
 <script lang="ts">
+    import Sidebar from "$lib/components/Sidebar.svelte";
+
     let { children } = $props()
 </script>
 
@@ -9,22 +11,14 @@
 </svelte:head>
 
 <style>
-    span {
-        margin-top: 28px;
-        margin-left: 15px;
-    }
     .root-container {
         background-image: linear-gradient(white, white 37%, #EDCFB0 55%, #EDCFB0 100%);
         min-height: 100vh;
     }
-    :global(body) {
-        margin: 0;
-        padding: 0;
-    }
 </style>
 
 <div class="root-container">
-    <span class="material-icons">menu</span>
+    <Sidebar/>
     {@render children()}
 </div>
 

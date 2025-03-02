@@ -1,27 +1,11 @@
 <script>
     import Button from "$lib/components/Button.svelte";
+    import Heading from "$lib/components/Heading.svelte";
+    import Paragraph from "$lib/components/Paragraph.svelte";
     import { DotLottieSvelte } from '@lottiefiles/dotlottie-svelte';    
 </script>
 
 <style>
-    h1 {
-        font-family: 'Playfair Display';
-        font-size: 24px;
-        margin: 0px;
-        padding: 0px;
-        padding-top: 20px;
-    }
-    h2 {
-        font-size: 20px;
-        margin: 0px;
-        padding: 0px;
-    }
-    .name {
-        font-family: 'Playfair Display';
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     .lottie {
         margin: 0px;
         padding: 0px;
@@ -34,22 +18,11 @@
     }
 </style>
 
-<div class="name">
-    <h1>
-        Ismira
-    </h1>
-    <h2>
-        Groepspraktijk
-    </h2>
-</div>
+<Heading headingOne="Ismira" headingTwo="Groepspraktijk"/>
 
-<p>
-    Psychologisch begeleiding <br> in Zaventem
-</p>
+<Paragraph paragraphText = "Psychologisch begeleiding <br> in Zaventem"/>
 
-<p>
-    Iedereen heeft af en toe <br> een luisterend oor nodig
-</p>
+<Paragraph paragraphText = "Iedereen heeft af en toe <br> een luisterend oor nodig"/>
 
 <div class="lottie">
     <DotLottieSvelte
