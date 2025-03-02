@@ -42,13 +42,13 @@
 </style>
 
 <button class="menu" on:click={toggle}>
-    <span class="material-icons">menu</span>
+    <span class="material-icons-outlined">menu</span>
 </button>
 
 {#if open}
     <div class="sidebar" transition:slide={{ axis: 'x' , duration: 300, easing: cubicInOut}}>
         <button class="cross" on:click={toggle}>
-            <span class="material-icons">close</span>
+            <span class="material-icons-outlined">close</span>
         </button>
         <Paragraph paragraphText="Menu" --margin-top=200px/>
         <Button buttonText="Afspraak maken" --margin-top=20px/>

@@ -17,6 +17,7 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
-		"@lottiefiles/dotlottie-svelte": "^0.4.6"
+		"@lottiefiles/dotlottie-svelte": "^0.4.6",
+		"libphonenumber-js": "^1.12.4"
 	}
 }
