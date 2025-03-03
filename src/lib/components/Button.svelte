@@ -5,14 +5,13 @@
 <style>
     .button {
         background-color: #FF8C00;
-        width: 180px;
+        width: var(--width, 180px);
         height: 48px;
         border: 2px solid black;
         border-radius: 16px;
-        /* ...existing code... */
         margin-top: var(--margin-top);
         margin-bottom: var(--margin-bottom);
-        /* ...existing code... */
+        padding-inline: var(--padding-inline);
         display: flex;
         justify-content: center;
         align-items: center;

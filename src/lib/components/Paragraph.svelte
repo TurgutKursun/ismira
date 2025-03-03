@@ -9,7 +9,7 @@
         margin: 0px;
         font-size: 20px;
         font-family: lato;
-        text-align: center;
+        text-align: var(--text-align, center);
     }
 </style>
 
