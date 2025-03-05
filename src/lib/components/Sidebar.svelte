@@ -3,6 +3,7 @@
     import Button from "./Button.svelte";
     import Paragraph from "./Paragraph.svelte";
     import { slide } from 'svelte/transition';
+    import Icon from "./Icon.svelte";
 
     let open = false;
 
@@ -12,7 +13,7 @@
 </script>
 
 <style>
-    span {
+    .icon {
         margin-top: 28px;
         margin-left: 15px;
     }
@@ -42,13 +43,17 @@
 </style>
 
 <button class="menu" on:click={toggle}>
-    <span class="material-icons-outlined">menu</span>
+    <div class="icon">
+        <Icon icon="menu"/>
+    </div>
 </button>
 
 {#if open}
     <div class="sidebar" transition:slide={{ axis: 'x' , duration: 300, easing: cubicInOut}}>
         <button class="cross" on:click={toggle}>
-            <span class="material-icons-outlined">close</span>
+            <div class="icon">
+                <Icon icon="close"/>
+            </div>
         </button>
         <Paragraph paragraphText="Menu" --margin-top=200px/>
         <Button buttonText="Afspraak maken" --margin-top=20px/>

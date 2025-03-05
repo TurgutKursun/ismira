@@ -1,6 +1,9 @@
 <script lang="ts">
+    import { fade, slide } from "svelte/transition";
     import Button from "./Button.svelte";
     import Paragraph from "./Paragraph.svelte";
+    import { cubicInOut } from "svelte/easing";
+    import Icon from "./Icon.svelte";
 
     let { icon, title, text, providers } = $props()
     let open = $state(false);
@@ -27,7 +30,9 @@
     }
 
     h2 {
-        margin-left: 10px
+        margin-inline: 16px;
+        margin-block: 16px;
+        font-weight: normal;
     }
 
     .accordion-body {
@@ -43,36 +48,39 @@
 </style>
 
 <div class="accordion-header">
-    <span class="material-icons-outlined">diversity_1</span>
-    <h2>Therapie</h2>
+    <Icon icon={icon} size=28px/>
+    <h2>{title}</h2>
     {#if open}
     <button class="toggle-btn" on:click={toggle}>
-        <span class="material-icons-outlined">remove</span>
+        <Icon icon="remove" size=28px/>
     </button>
     {:else}
     <button class="toggle-btn" on:click={toggle}>
-        <span class="material-icons-outlined">add</span>
+        <Icon icon="add" size=28px/>
     </button>
     {/if}
 </div>
 
 {#if open}
-    <div class="accordion-body">
-        <Paragraph 
-        paragraphText="Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."
-        --text-align="left"
-        --padding-top=0px
-        --padding-bottom=0px
-        />
-    </div>
-
-    <div class="providers">
-        {#each providers as provider}
-            <Button 
-            buttonText={provider}
-            --width="fit-content"
-            --padding-inline=10px
+    <div transition:slide={{ axis: 'y' , duration: 300, easing: cubicInOut}}>
+        <div class="accordion-body">
+            <Paragraph 
+            paragraphText={text}
+            --text-align="left"
+            --font-weight=300
+            --padding-top=0px
+            --padding-bottom=0px
             />
-        {/each}
+        </div>
+    
+        <div class="providers">
+            {#each providers as provider}
+                <Button 
+                buttonText={provider}
+                --width="fit-content"
+                --padding-inline=10px
+                />
+            {/each}
+        </div>
     </div>
 {/if}
