@@ -4,7 +4,7 @@
 
 <style>
     .button {
-        background-color: #FF8C00;
+        background-color: var(--background-color, #FF8C00);
         width: var(--width, 180px);
         height: 48px;
         border: 2px solid black;
