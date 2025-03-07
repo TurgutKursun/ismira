@@ -6,6 +6,7 @@
     img {
         clip-path: circle();
         width: 200px;
+        background-color: white;
     }
 </style>
 

@@ -34,6 +34,7 @@
         flex-direction: column;
         align-items: center;
         border-right: 2px solid black;
+        z-index: 1000;
     }
 
     .cross {

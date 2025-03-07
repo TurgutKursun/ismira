@@ -19,7 +19,7 @@
 </style>
 
 <div class="card">
-    <div style="padding-block: 0px;">
+    <div style="padding-top: 10px;">
         <Photo {img}/>
     </div>
 
