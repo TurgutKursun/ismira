@@ -57,8 +57,9 @@
             </div>
         </button>
         <Paragraph paragraphText="Menu" --margin-top=200px/>
-        <Button buttonText="Afspraak maken" --margin-top=20px/>
-        <Button buttonText="Wat doen we?" --margin-top=20px/>
-        <Button buttonText="Wie is wie?" --margin-top=20px/>
+        <Button buttonText="Home" href="/" --margin-top=20px/>
+        <Button buttonText="Afspraak maken" href="/afspraak-maken" --margin-top=20px/>
+        <Button buttonText="Wat doen we?" href="/wat-doen-we" --margin-top=20px/>
+        <Button buttonText="Wie is wie?" href="/wie-is-wie" --margin-top=20px/>
     </div>
 {/if}

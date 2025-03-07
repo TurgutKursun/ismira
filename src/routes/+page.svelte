@@ -33,7 +33,7 @@
 </div>
 
 <div class="buttons">
-    <Button buttonText="Afspraak maken" --margin-bottom=20px/>
-    <Button buttonText="Wat doen we?" --margin-bottom=20px/>
-    <Button buttonText="Wie is wie?"/>
+    <Button buttonText="Afspraak maken" href="/afspraak-maken" --margin-bottom=20px/>
+    <Button buttonText="Wat doen we?" href="/wat-doen-we" --margin-bottom=20px/>
+    <Button buttonText="Wie is wie?" href="/wie-is-wie"/>
 </div>

@@ -1,5 +1,5 @@
 <script lang="ts">
-    let { buttonText } = $props()
+    let { buttonText, href = '/' } = $props()
 </script>
 
 <style>
@@ -22,6 +22,6 @@
     }
 </style>
 
-<a class="button" href="/afspraak-maken">
+<a class="button" {href}>
     {buttonText}
 </a>

@@ -11,7 +11,7 @@
 </style>
 
 <div class="team">
-    <TeamMember img="Ismigul" name="Ismigul Kursun" position="Klinisch Psychologe"/>
-    <TeamMember img="Samira" name="Samira Zerrouk" position="Klinisch Psychologe"/>
+    <TeamMember img="Ismigul" firstName="Ismigul" lastName="Kursun" position="Klinisch Psychologe"/>
+    <TeamMember img="Samira" firstName="Samira" lastName="Zerrouk" position="Klinisch Psychologe"/>
     <div></div>
 </div>

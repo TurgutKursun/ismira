@@ -2,7 +2,7 @@
     import Button from "./Button.svelte";
     import Paragraph from "./Paragraph.svelte";
     import Photo from "./Photo.svelte";
-    let { img, name, position,  } = $props()
+    let { img, firstName, lastName, position,  } = $props()
 </script>
 
 <style>
@@ -24,12 +24,12 @@
     </div>
 
     <Paragraph 
-        paragraphText="{name} <br/> {position}"
+        paragraphText="{firstName + " " + lastName} <br/> {position}"
         --padding-top=0px
         --padding-bottom=0px
         />
 
     <div style="padding-block: 32px;">
-        <Button buttonText = "meer informatie" --background-color="#EDCFB0"/>
+        <Button buttonText = "meer informatie" href='/teamlid/{firstName}-{lastName}' --background-color="#EDCFB0"/>
     </div>
 </div>
