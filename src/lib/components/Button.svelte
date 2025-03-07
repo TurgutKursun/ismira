@@ -1,5 +1,5 @@
 <script lang="ts">
-    let { buttonText, href = '/' } = $props()
+    let { buttonText, href = '/', onclick } = $props()
 </script>
 
 <style>
@@ -22,6 +22,6 @@
     }
 </style>
 
-<a class="button" {href}>
+<a class="button" {href} on:click={onclick}>
     {buttonText}
 </a>

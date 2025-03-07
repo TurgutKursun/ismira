@@ -4,6 +4,7 @@
 
 <style>
     .team {
+        padding-top: 10px;
         display: flex;
         flex-direction: column;
         gap: 32px;
