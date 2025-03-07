@@ -41,6 +41,14 @@
         align-self: flex-end;
         margin-right: 15px;
     }
+
+    .closer {
+        position: fixed;
+        top: 0px;
+        left: 75%;
+        width: 25%;
+        height: 100vh;
+    }
 </style>
 
 <button class="menu" on:click={toggle}>
@@ -62,4 +70,8 @@
         <Button buttonText="Wat doen we?" href="/wat-doen-we" --margin-top=20px/>
         <Button buttonText="Wie is wie?" href="/wie-is-wie" --margin-top=20px/>
     </div>
+
+    <button class="closer" aria-label="sidebar-closer" style="margin-inline: 0px; padding-inline: 0px;" on:click={toggle}>
+        
+    </button> 
 {/if}
