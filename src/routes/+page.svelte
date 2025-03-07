@@ -7,14 +7,31 @@
 
 <style>
     .lottie {
-        margin: 0px;
         padding: 0px;
         margin-top: 30px;
+        width: 500px;
+        margin-inline: auto;
     }
     .buttons {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    @media (min-width: 768px) {
+        .lottie {
+            width: 500px;
+            display: block;
+            margin-inline: auto;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px
+        }
     }
 </style>
 
@@ -35,5 +52,5 @@
 <div class="buttons">
     <Button buttonText="Afspraak maken" href="/afspraak-maken" --margin-bottom=20px/>
     <Button buttonText="Wat doen we?" href="/wat-doen-we" --margin-bottom=20px/>
-    <Button buttonText="Wie is wie?" href="/wie-is-wie"/>
+    <Button buttonText="Wie is wie?" href="/wie-is-wie" --margin-bottom=20px/>
 </div>
