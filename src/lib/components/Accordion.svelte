@@ -76,7 +76,8 @@
         <div class="providers">
             {#each providers as provider}
                 <Button 
-                buttonText={provider}
+                buttonText={provider.firstName}
+                href="/teamlid/{provider.firstName}-{provider.lastName}"
                 --width="fit-content"
                 --padding-inline=10px
                 />

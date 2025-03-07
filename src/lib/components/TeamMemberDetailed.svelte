@@ -36,5 +36,5 @@
     
     <Paragraph paragraphText="{university} <br/> {degree}" --padding-top=10px --padding-bottom=30px/>
     
-    <Button buttonText="afspraak maken"/>
+    <Button buttonText="afspraak maken" href='/afspraak-maken'/>
 </div>
