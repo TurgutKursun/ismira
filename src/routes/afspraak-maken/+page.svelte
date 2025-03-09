@@ -13,11 +13,6 @@ import Heading from "$lib/components/Heading.svelte";
         flex-direction: column;
         align-items: center;
     }
-
-    .map {
-        max-width: 200px;
-        max-height: 200px;
-    }
 </style>
 
 
