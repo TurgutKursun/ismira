@@ -49,6 +49,17 @@
         width: 25%;
         height: 100vh;
     }
+
+    @media (min-width: 768px) {
+        .sidebar {
+            width: 300px;
+        }
+
+        .closer {
+            left: 300px;
+            width: 100%;
+        }
+    }
 </style>
 
 <button class="menu" on:click={toggle}>

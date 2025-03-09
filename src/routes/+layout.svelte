@@ -1,5 +1,6 @@
 <script lang="ts">
     import Sidebar from "$lib/components/Sidebar.svelte";
+    import { page } from '$app/state';
 
     let { children } = $props()
 </script>
@@ -20,7 +21,9 @@
 </style>
 
 <div class="root-container">
-    <Sidebar/>
+    {#if !(page.url.pathname === '/')}
+        <Sidebar/>
+    {/if}
     {@render children()}
 </div>
 
