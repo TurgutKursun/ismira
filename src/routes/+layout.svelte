@@ -14,7 +14,7 @@
 
 <style>
     .root-container {
-        background-image: linear-gradient(white, #EDCFB0 100%);
+        background-image: rgb(245, 241, 235);
         min-height: 100vh;
     }
 </style>
