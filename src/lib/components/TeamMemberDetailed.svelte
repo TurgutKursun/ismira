@@ -23,10 +23,14 @@
 </style>
 
 <div class="page">
-    <Heading headingOne={name} headingTwo={position}/>
+    <div>
+        <Heading headingOne={name} headingTwo={position} />
+    </div>
 
-    <Photo img={photoFileName}/>
-    
+    <div style="margin-top: 15px; margin-bottom: 15px;"> 
+        <Photo img={photoFileName}/>
+    </div>
+
     <Paragraph paragraphText={description} --padding-inline=25px --text-align="justify" --padding-top=0px --padding-bottom=20px/>
     
     <div class="opleiding">

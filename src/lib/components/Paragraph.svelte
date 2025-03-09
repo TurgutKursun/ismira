@@ -13,6 +13,12 @@
         font-weight: var(--font-weight, 400);
         text-align: var(--text-align, center);
     }
+
+    @media(min-width: 712px) {
+        p {
+            max-width: 300px;
+        }
+    }
 </style>
 
 <p>

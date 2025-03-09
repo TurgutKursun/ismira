@@ -16,12 +16,12 @@
     .root-container {
         background-image: linear-gradient(white, #EDCFB0 100%);
         min-height: 100vh;
-        padding-bottom: 0;
     }
 </style>
 
 <div class="root-container">
     <Sidebar/>
     {@render children()}
+    <div style="padding-bottom:10px"></div>
 </div>
 
