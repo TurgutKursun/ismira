@@ -21,9 +21,7 @@
 </style>
 
 <div class="root-container">
-    {#if !(page.url.pathname === '/')}
-        <Sidebar/>
-    {/if}
+    <Sidebar/>
     {@render children()}
 </div>
 
