@@ -16,6 +16,12 @@
         justify-content: center;
         align-items: center;
     }
+
+    @media (min-width: 712px) {
+        .card {
+            width: 350px;
+        }
+    }
 </style>
 
 <div class="card">

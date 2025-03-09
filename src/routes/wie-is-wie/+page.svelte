@@ -5,10 +5,19 @@
 
 <style>
     .team {
-        padding-top: 10px;
+        padding-top: 20px;
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 30px;
+    }
+
+    @media (min-width: 712px) {
+        .team {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
     }
 </style>
 
