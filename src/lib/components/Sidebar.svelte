@@ -77,7 +77,7 @@
         </button>
         <Paragraph paragraphText="Menu" --margin-top=200px/>
         <Button buttonText="Home" onclick={toggle} href="/" --margin-top=20px/>
-        <Button buttonText="Afspraak maken" onclick={toggle} href="/afspraak-maken" --margin-top=20px/>
+        <Button buttonText="Contact" onclick={toggle} href="/contact" --margin-top=20px/>
         <Button buttonText="Wat doen we?" onclick={toggle} href="/wat-doen-we" --margin-top=20px/>
         <Button buttonText="Wie is wie?" onclick={toggle} href="/wie-is-wie" --margin-top=20px/>
     </div>

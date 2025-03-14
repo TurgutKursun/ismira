@@ -12,6 +12,7 @@
         font-family: lato;
         font-weight: var(--font-weight, 400);
         text-align: var(--text-align, center);
+        margin-inline: 10px
     }
 
     @media(min-width: 712px) {

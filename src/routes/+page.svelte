@@ -57,7 +57,7 @@
     </div>
     
     <div class="buttons">
-        <Button buttonText="Afspraak maken" href="/afspraak-maken" --margin-bottom=20px/>
+        <Button buttonText="Contact" href="/contact" --margin-bottom=20px/>
         <Button buttonText="Wat doen we?" href="/wat-doen-we" --margin-bottom=20px/>
         <Button buttonText="Wie is wie?" href="/wie-is-wie" --margin-bottom=20px/>
     </div>
