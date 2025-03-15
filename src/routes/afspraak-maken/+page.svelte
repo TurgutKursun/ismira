@@ -1,5 +1,6 @@
 <script lang="ts">
     import Address from "$lib/components/Address.svelte";
+    import Button from "$lib/components/Button.svelte";
     import Email from "$lib/components/Email.svelte";
     import Heading from "$lib/components/Heading.svelte";
     import Icon from "$lib/components/Icon.svelte";
@@ -34,6 +35,7 @@
             display: grid;
             align-items:baseline;
             grid-template-columns: 1fr 1fr; 
+            padding-top: 30px
         }
 
         .content {
@@ -42,6 +44,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            border-right: 2px solid black;
         }
 
         .map {
@@ -50,7 +53,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border-left: 2px solid black;
             margin-block: 30px
         }
 
@@ -64,15 +66,19 @@
 
 <div class="container">
     <div class="content">
-        <Paragraph paragraphText="Om een afspraak te maken, of voor <br/> meer informatie, kan u ons altijd </br> bereiken via e-mail, sms, of gsm" --padding-top=0px/>
+        <Paragraph paragraphText="Om een afspraak te maken, of voor meer informatie, kan u ons altijd </br> bereiken via e-mail, sms, of gsm"/>
 
         <Icon icon="mail" size=40px/>
         <Email email="info@ismira.com" --padding-bottom=20px/>
-        <Paragraph paragraphText="We beantwoorden uw mails <br/> zo snel mogelijk, vaak binnen de 24u" --padding-top=0px/>
+        <Paragraph paragraphText="We beantwoorden uw mails zo snel mogelijk, vaak binnen de 24u" --padding-top=0px/>
 
         <Icon icon="phone" size=40px/>
         <PhoneNumber number="+32494130449" --padding-bottom=20px/>
-        <Paragraph paragraphText="Bereikbaar maandag - vrijdag <br/> tussen 09h00 en 16h00" --padding-top=0px/>
+        <Paragraph paragraphText="Bereikbaar maandag - vrijdag tussen 09h00 en 16h00" --padding-top=0px/>
+
+        <Icon icon="calendar_month" size=40px/>
+        <Paragraph paragraphText="Het is ook mogelijk om online een afspraak te maken" --padding-top=20px/>
+        <Button buttonText="Online Afspraak Maken" href="/online-afspraak-maken" --width=240px --background-color="transparent"/>
     </div>
     <div class="map">
         <Icon icon="location_on" size=40px/>

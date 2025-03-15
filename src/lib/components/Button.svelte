@@ -1,5 +1,5 @@
 <script lang="ts">
-    let { buttonText, href = '/', onclick } = $props()
+    let { buttonText, href = '/', onclick = (e) => {} } = $props()
 </script>
 
 <style>
