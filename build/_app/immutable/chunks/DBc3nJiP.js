@@ -1,0 +1,1 @@
+import"./Bg9kRutz.js";import{t as o,a as p,b as i,d as m,r as n,e as l}from"./C0_9Q_0k.js";import{s as f}from"./1quYhHMP.js";import{p as c}from"./Cv3Xngkr.js";var d=o('<span class="material-symbols-outlined"> </span>');function z(a,e){let s=c(e,"size",3,"28px");var t=d(),r=m(t,!0);n(t),p(()=>{f(t,"style",`font-size: ${s()??""};`),l(r,e.icon)}),i(a,t)}export{z as I};
