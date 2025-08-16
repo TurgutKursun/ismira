@@ -1,0 +1,1 @@
+import"./Bg9kRutz.js";import{t as n,a as o,b as c,d as t,r as s,s as k,e as i}from"./C0_9Q_0k.js";var m=n('<div class="name svelte-1ahkk5j"><h1 class="svelte-1ahkk5j"> </h1> <h2 class="svelte-1ahkk5j"> </h2></div>');function g(v,r){var a=m(),e=t(a),l=t(e,!0);s(e);var h=k(e,2),d=t(h,!0);s(h),s(a),o(()=>{i(l,r.headingOne),i(d,r.headingTwo)}),c(v,a)}export{g as H};
