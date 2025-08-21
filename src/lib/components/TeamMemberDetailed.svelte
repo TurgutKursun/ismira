@@ -27,11 +27,11 @@
         <Heading headingOne={name} headingTwo={position} />
     </div>
 
-    <div style="margin-top: 15px; margin-bottom: 15px;"> 
+    <div style="margin-top: 0px; margin-bottom: 0px;"> 
         <Photo img={photoFileName}/>
     </div>
 
-    <Paragraph paragraphText={description} --padding-inline=25px --text-align="justify" --padding-top=0px --padding-bottom=20px/>
+    <Paragraph paragraphText={description} --max-width=1300px --padding-inline=25px --text-align="justify" --padding-top=0px --padding-bottom=20px/>
     
     <div class="opleiding">
         <h2 style="margin-block: 0px;">Opleiding</h2>

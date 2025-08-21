@@ -77,7 +77,7 @@
             {#each providers as provider}
                 <Button 
                 buttonText={provider.firstName}
-                href="/teamlid/{provider.firstName}-{provider.lastName}"
+                href="/meer-over-ismigul"
                 --width="fit-content"
                 --padding-inline=10px
                 />

@@ -15,7 +15,7 @@
     }
 </style>
 
-<Heading headingOne="Ismira" headingTwo="Wat doen we?"/>
+<Heading headingOne="Wat doen we?" headingTwo=""/>
 
 <div class="accordions">
     <Accordion 
@@ -25,10 +25,7 @@
     providers={[{
         firstName: "Ismigul",
         lastName: "Kursun"
-    }, {
-            firstName: "Samira",
-            lastName: "Zerrouk"
-        }]}
+    }, ]}
         />
 
     <Accordion
@@ -38,35 +35,23 @@
         providers={[{
         firstName: "Ismigul",
         lastName: "Kursun"
-    }, {
-            firstName: "Samira",
-            lastName: "Zerrouk"
-        }]}
+    }]}
     />
 
     <Accordion
     icon="person_search"
-    title="Diagnostiek"
-    text="We voeren psychologische onderzoeken uit om inzicht te krijgen in klachten en sterktes. Dit helpt om de juiste ondersteuning en begeleiding te bieden. <br/> <br/> Voor diagnostiek kan u terecht bij:"
-        providers={[{
-        firstName: "Ismigul",
-        lastName: "Kursun"
-    }, {
-            firstName: "Samira",
-            lastName: "Zerrouk"
-        }]}
+    title="Diagnostiek (binnenkort beschikbaar)"
+    text="We voeren psychologische onderzoeken uit om inzicht te krijgen in klachten en sterktes. Dit helpt om de juiste ondersteuning en begeleiding te bieden."
+        providers={[]}
     />
 
     <Accordion
     icon="toys_and_games"
-    title="Kinderen"
+    title="Kinderen (vanaf 12 jaar)"
     text="We ondersteunen kinderen bij emotionele en gedragsmatige uitdagingen. We streven naar een veilige omgeving waarin ze zich optimaal kunnen ontwikkelen. <br/> <br/> Voor begeleiding van kinderen kan u terecht bij:"
         providers={[{
         firstName: "Ismigul",
         lastName: "Kursun"
-    }, {
-            firstName: "Samira",
-            lastName: "Zerrouk"
-        }]}
+    }]}
     />
 </div>

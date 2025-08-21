@@ -7,7 +7,7 @@
 <style>
     .lottie {
         padding: 0px;
-        margin-top: 30px;
+        margin-top: 0px;
         width: 350px;
         margin-inline: auto;
     }
@@ -25,7 +25,7 @@
 
     @media (min-width: 768px) {
         .lottie {
-            width: 500px;
+            width: 400px;
             display: block;
             margin-inline: auto;
         }
@@ -41,15 +41,16 @@
 </style>
 
 <div class="container">
-    <Heading headingOne="Ismira" headingTwo="Groepspraktijk"/>
+    <Heading headingOne="Ismigül Kursun" headingTwo="Klinisch Psycholoog"/>
 
-    <Paragraph paragraphText = "Psychologisch begeleiding <br> in Zaventem"/>
-    
-    <Paragraph paragraphText = "Iedereen heeft af en toe <br> een luisterend oor nodig"/>
+    <Paragraph paragraphText = "Begeleiding in Zaventem"/>
     
     <div class="buttons">
-        <Button buttonText="Afspraak maken" href="/afspraak-maken" --margin-bottom=20px/>
-        <Button buttonText="Wat doen we?" href="/wat-doen-we" --margin-bottom=20px/>
-        <Button buttonText="Wie is wie?" href="/wie-is-wie" --margin-bottom=20px/>
+        <Button buttonText="Afspraak maken" href="/afspraak-maken" --margin-bottom=10px/>
+        <Button buttonText="Wat doen we?" href="/wat-doen-we" --margin-bottom=10px/>
+        <Button buttonText="Meer over Ismigül" href="/meer-over-ismigul" --margin-bottom=10px/>
     </div>
+    
+    <img class="lottie" src="/psychology-image.png" alt="Psychology"/>
+    
 </div>

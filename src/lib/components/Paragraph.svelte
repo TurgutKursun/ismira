@@ -4,8 +4,8 @@
 
 <style>
     p {
-        padding-top: var(--padding-top, 30px);
-        padding-bottom: var(--padding-bottom, 30px);
+        padding-top: var(--padding-top, 50px);
+        padding-bottom: var(--padding-bottom, 50px);
         padding-inline: var(--padding-inline);
         margin: 0px;
         font-size: 20px;
@@ -16,7 +16,7 @@
 
     @media(min-width: 712px) {
         p {
-            max-width: 300px;
+            max-width: var(--max-width, 350px);
         }
     }
 </style>
